@@ -227,8 +227,8 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 #rofi binds
-#bindsym $mod+d exec dmenu_run
-bindsym $mod+d exec rofi -show run
+bindsym $mod+d exec dmenu_run
+#bindsym $mod+d exec rofi -show run
 #interactive screenshot by pressing printscreen
 #bindsym Print exec gnome-screenshot -i 
 #crop-area screenshot by pressing Mod + printscreen

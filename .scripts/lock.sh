@@ -5,7 +5,7 @@ icon="$HOME/.config/i3/lock.png"
 tmpbg='/tmp/screen.png'
 
 # take a screenshot
-scrot "$tmpbg"
+flameshot -c "$tmpbg"
 
 # blur the screenshot by resizing and scaling back up
 convert "$tmpbg" -filter Gaussian -thumbnail 20% -sample 500% "$tmpbg"

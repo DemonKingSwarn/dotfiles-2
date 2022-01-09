@@ -1,0 +1,10 @@
+#!/bin/bash
+
+chosen=$(ls ~/cashew/emojis/ | rofi -dmenu -p "Emoji: " -i)
+
+[ -z "$chosen" ] && exit
+xclip -selection clipboard -t image/png -i "$chosen"
+xdotool key ctrl+v
+sleep 0.15
+xdotool key Return
+

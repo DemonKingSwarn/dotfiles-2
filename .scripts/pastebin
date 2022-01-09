@@ -1,0 +1,5 @@
+#!/bin/bash
+
+file=$(ls $HOME/.scripts/ | dmenu -i -l 20)
+cat "$file" | curl -F 'f:1=<-' ix.io | xclip -selection c
+notify-send "😀 pastebin for $file created."

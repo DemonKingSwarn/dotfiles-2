@@ -215,7 +215,7 @@ hide_edge_borders both
 
 bindsym $mod+shift+x exec ~/.scripts/lock.sh
 
-bindsym $mod+x exec ~/.scripts/killProgram
+#bindsym $mod+x exec ~/.scripts/killProgram
 
 # key-bindings 
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 2 +5% #increase sound volume
@@ -227,14 +227,14 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 #rofi binds
-bindsym $mod+d exec dmenu_run
-#bindsym $mod+d exec rofi -show run
+#bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec rofi -show run
+
 #interactive screenshot by pressing printscreen
 #bindsym Print exec gnome-screenshot -i 
 #crop-area screenshot by pressing Mod + printscreen
 #bindsym $mod+Print exec gnome-screenshot -a
 
-# screenshot by flameshot by pressing mod + home
 bindsym Print exec flameshot full -c -p ~/Pictures/ScreenShots/
 bindsym $mod+Print exec flameshot gui
 
@@ -242,8 +242,8 @@ bindsym $mod+Print exec flameshot gui
 exec --no-startup-id clipit
 exec --no-startup-id flameshot
 exec_always compton -f
-#exec_always feh --bg-fill ~/Pictures/nordic-wallpapers/MoonBig.jpeg
-exec_always feh --bg-fill ~/Pictures/nordic-wallpapers/amazing-spiderman-OwO.png
+exec_always feh --bg-fill ~/Pictures/nordic-wallpapers/wallpapers/ign_mandalorian.jpg
+#exec_always feh --bg-fill ~/Pictures/nordic-wallpapers/amazing-spiderman-OwO.png
 
 # emoji selector window key binding
 bindsym $mod+shift+i exec ~/.scripts/emojis/emoji.sh

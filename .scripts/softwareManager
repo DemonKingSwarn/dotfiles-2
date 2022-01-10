@@ -30,6 +30,6 @@ case $action in
 		 notify-send 'System update completed'
 		 ;;
 	*)
-		notify-send 'no option selected'
-		;;
+	notify-send 'no option selected'
+	;;
 esac

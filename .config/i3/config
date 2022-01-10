@@ -214,8 +214,7 @@ bindsym $mod+Print exec flameshot gui
 
 # startup
 exec --no-startup-id $HOME/.scripts/startup.sh
-exec_always compton -f
-exec_always feh --bg-fill ~/Pictures/nordic-wallpapers/wallpapers/ign_mandalorian.jpg
+exec_always $HOME/.scripts/startupMisc.sh
 #exec_always feh --bg-fill ~/Pictures/nordic-wallpapers/amazing-spiderman-OwO.png
 
 # emoji selector window key binding

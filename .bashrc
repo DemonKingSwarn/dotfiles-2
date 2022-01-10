@@ -93,6 +93,7 @@ alias l='ls -CF'
 alias ..='cd ..'
 alias mv='mv -i'
 alias rm='rm -i'
+alias config='/usr/bin/git --git-dir=/home/swarnadityasingh/.dotfiles --work-tree=/home/swarnadityasingh'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -137,4 +138,3 @@ xset b 0 0 0
 |_|   \\__,_|\\___|_|\\_\\    |____/ \\___/ \\___|_|\\___|\\__|\\__, |
                                                        |___/ 
 "
-alias config='/usr/bin/git --git-dir=/home/swarnadityasingh/.dotfiles --work-tree=/home/swarnadityasingh'

@@ -1,7 +1,6 @@
 # dotfiles-2
-<p align="center">
 ![UwU](https://github.com/DemonKingSwarn/dotfiles-2/blob/main/Pictures/output.gif)
-</p>
+<hr>
 ## Introduction
 These are my dotfiles, intended to be installable.
 ### Screenshot

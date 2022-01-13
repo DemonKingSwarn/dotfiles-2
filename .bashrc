@@ -122,7 +122,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# useless didnt worked
+
 export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libgtk3-nocsd.so.0
 
 # Turn off system beep in console:
@@ -130,11 +130,4 @@ xset b off
 xset b 0 0 0
 
  # Rice
- echo "
- _____           _         ____             _      _         
-|  ___|   _  ___| | __    / ___|  ___   ___(_) ___| |_ _   _ 
-| |_ | | | |/ __| |/ /    \\___ \\ / _ \\ / __| |/ _ \\ __| | | |
-|  _|| |_| | (__|   <      ___) | (_) | (__| |  __/ |_| |_| |
-|_|   \\__,_|\\___|_|\\_\\    |____/ \\___/ \\___|_|\\___|\\__|\\__, |
-                                                       |___/ 
-"
+echo "$ cat fsociety00.dat"

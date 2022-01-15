@@ -70,5 +70,14 @@ alias config='/usr/bin/git --git-dir=/home/swarnadityasingh/.dotfiles --work-tre
 alias ..='cd ..'
 alias count='wc -l'
 
+echo "
+ _____           _         ____             _      _         
+|  ___|   _  ___| | __    / ___|  ___   ___(_) ___| |_ _   _ 
+| |_ | | | |/ __| |/ /    \\___ \\ / _ \\ / __| |/ _ \\ __| | | |
+|  _|| |_| | (__|   <      ___) | (_) | (__| |  __/ |_| |_| |
+|_|   \\__,_|\\___|_|\\_\\    |____/ \\___/ \\___|_|\\___|\\__|\\__, |
+                                                       |___/ 
+"
+
 
 source ./Downloads/gitthings/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

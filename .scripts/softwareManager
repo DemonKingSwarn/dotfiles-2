@@ -10,13 +10,13 @@ action=$(echo -e "Install Program\nRemove Program\nRemove Waste\nUpdate System" 
 
 case $action in
 	"Install Program")
-		package=$(apt-fast list | awk '{name=$1}' | sort -d | dmenu -i -l 20 | awk '{print $1}')
+		package=$(apt-fast list | awk -F'/' 'NR>1{print $1}' | sort -d | dmenu -i -l 20)
 
 		sudo apt-fast install $package -y
 		notify-send "$package is installed"
 		;;
 	 "Remove Program")
-		 package=$(apt-fast list --installed | awk '{name=$1}' | sort -d | dmenu -i -l 20 | awk '{print $1}')
+		 package=$(apt-fast list --installed | awk -F'/' 'NR>1{print$1}'  | sort -d | dmenu -i -l 20)
 
 		 sudo apt-fast remove $package -y
 		 notify-send "$package is removed"

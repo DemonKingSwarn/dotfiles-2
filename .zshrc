@@ -64,9 +64,7 @@ bindkey -s '^o' 'lfcd\n'
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
-# Load aliases and shortcuts if existent.
-[ -f "$HOME/.config/shortcutrc" ] && source "$HOME/.config/shortcutrc"
-[ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
+# alias 
 
 alias config='/usr/bin/git --git-dir=/home/swarnadityasingh/.dotfiles --work-tree=/home/swarnadityasingh'
 alias ..='cd ..'

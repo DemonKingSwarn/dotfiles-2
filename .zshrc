@@ -72,5 +72,5 @@ alias config='/usr/bin/git --git-dir=/home/swarnadityasingh/.dotfiles --work-tre
 alias ..='cd ..'
 alias count='wc -l'
 
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
+source ./Downloads/gitthings/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

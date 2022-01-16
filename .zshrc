@@ -69,6 +69,7 @@ bindkey '^e' edit-command-line
 alias config='/usr/bin/git --git-dir=/home/swarnadityasingh/.dotfiles --work-tree=/home/swarnadityasingh'
 alias ..='cd ..'
 alias count='wc -l'
+alias ttyper='/home/swarnadityasingh/.cargo/bin/ttyper'
 
 echo "
  _____           _         ____             _      _         

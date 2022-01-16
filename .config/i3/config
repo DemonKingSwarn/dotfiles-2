@@ -192,13 +192,14 @@ bindsym $mod+shift+x exec ~/.scripts/lock.sh
 #bindsym $mod+x exec ~/.scripts/killProgram
 
 # key-bindings 
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 2 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 2 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 2 toggle # mute sound
-bindsym XF86AudioPlay exec playerctl play-pause
-bindsym XF86AudioPause exec playerctl play-pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioRaiseVolume exec pamixer -i 2 5%
+#increase sound volume
+
+bindsym XF86AudioLowerVolume exec pamixer -d 2 5%
+#decrease sound volume
+
+bindsym XF86AudioMute exec pamixer -m toggle
+# mute sound
 
 #rofi binds
 #bindsym $mod+d exec dmenu_run
@@ -218,8 +219,6 @@ exec --no-startup-id flameshot
 exec_always compton -f
 exec_always feh --bg-fill ~/Pictures/nordic-wallpapers/wallpapers/ign_mandalorian.jpg
 
-#exec_always feh --bg-fill ~/Pictures/nordic-wallpapers/amazing-spiderman-OwO.png
-
 # emoji selector window key binding
 bindsym $mod+shift+i exec ~/.scripts/emojis/emoji.sh
 
@@ -236,7 +235,7 @@ exec --no-startup-id xss-lock -l ~/.scripts/lock.sh
 bindsym $mod+p exec ~/.scripts/passmenu
 
 # translator
-bindsym $mod+t exec ~/.scripts/translator
+bindsym shift+n exec ~/.scripts/flix-cli/flix-cli
 
 # Unicode
 bindsym $mod+u exec ~/.scripts/unicode/unicode

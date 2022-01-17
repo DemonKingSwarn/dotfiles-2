@@ -1,5 +1,5 @@
 configuration {
-	modi: "run,ssh";
+	modi: "run,ssh,file-browser-extended,file-browser";
 	theme: "~/.config/rofi/nord.rasi";
 	font: "RobotoMono Nerd Font 12";
 	location: 2;

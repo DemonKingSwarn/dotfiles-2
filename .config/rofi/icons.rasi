@@ -7,9 +7,9 @@
 	nord5: #e5e9f0;
 	nord6: #eceff4;
 	nord7: #8fbcbb;
-	nord8: #88c0d0;
+	nord8: #5e81ac;
 	nord9: #81a1c1;
-	nord10: #5e81ac;
+	nord10: #88c0d0;
 	nord11: #bf616a;
 	nord12: #d08770;
 	nord13: #ebcb8b;
@@ -166,4 +166,3 @@ entry {
 	text-color: var(normal-foreground);
 	background-color: var(nord3);
 }
-

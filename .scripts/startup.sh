@@ -5,3 +5,5 @@
 cd ~/cashew/emojis/
 git pull
 
+# rice
+compton -f -b

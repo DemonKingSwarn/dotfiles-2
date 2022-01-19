@@ -15,7 +15,7 @@ floating_modifier $mod
 
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec st
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -198,7 +198,7 @@ bindsym XF86AudioRaiseVolume exec pamixer -i 2 5%
 bindsym XF86AudioLowerVolume exec pamixer -d 2 5%
 #decrease sound volume
 
-bindsym XF86AudioMute exec pamixer -m toggle
+bindsym XF86AudioMute exec pamixer -t
 # mute sound
 
 #rofi binds
@@ -228,6 +228,7 @@ exec --no-startup-id dunst -c ~/.config/dunst/dunstrc
 
 # kaju emojis and gifs
 bindsym $mod+i exec ~/.scripts/custom_emoji/custom_emoji.sh
+bindsym $mod+m exec ~/.scripts/custom_emoji/subscripts/matrixrun
 
 # screen saver
 exec --no-startup-id xss-lock -l ~/.scripts/lock.sh
@@ -237,9 +238,6 @@ bindsym $mod+p exec ~/.scripts/passmenu
 
 # translator
 bindsym shift+n exec ~/.scripts/flix-cli/flix-cli
-
-# Unicode
-bindsym $mod+u exec ~/.scripts/unicode/unicode
 
 # bookmarks
 bindsym $mod+b exec ~/.scripts/bookmarks/bookmarks
@@ -256,7 +254,7 @@ bindsym $mod+c exec ~/.scripts/share
 # Assign programs to workspaces
 for_window [class="Firefox"] move to workspace $ws1
 for_window [class="Waterfox"] move to workspace $ws1
-for_window [class="St"] move to workspace $ws2
+for_window [class="kitty"] move to workspace $ws2
 
 # floating
 for_window [class="Pavucontrol"] floating enable

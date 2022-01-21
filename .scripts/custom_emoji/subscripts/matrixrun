@@ -1,9 +1,10 @@
 #!/bin/bash
 
-chosen=$((rofi -theme "~/.config/rofi/nord.rasi" -show file-browser-extended -file-browser-dir ~/cashew/emojis -file-browser-cmd basename -file-browser-hide-parent -show-icons)
-
-[ -z "$chosen" ] && exit
-xclip -selection clipboard -t image/png -i "$chosen"
+#chosen=$(rofi -theme "~/.config/rofi/nord.rasi" -show file-browser-extended -file-browser-dir ~/cashew/emojis -file-browser-cmd basename -file-browser-hide-parent -show-icons)
+chosen=$(find $HOME/cashew/emojis/ -type f | rofi -dmenu -i -p "Select")
+#[ -z "$chosen" ] && exit
+#printf "https://gitlab.com/thecashewtrader/emojis/-/raw/main/$chosen" | xclip -sel c
+xclip -selection clipboard -t image/png "$chosen"
 xdotool key ctrl+v
 sleep 0.15
 xdotool key Return

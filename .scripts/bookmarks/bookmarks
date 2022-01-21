@@ -5,5 +5,5 @@ BROWSER="~/.scripts/waterfox"
 
 link=$(cat "$SCRIPT_DIR/bookmarks.txt" | rofi -dmenu)
 [ -z "$link" ] && exit
-$BROWSER "$link" &
+"$BROWSER" "$link" &
 

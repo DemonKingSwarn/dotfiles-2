@@ -15,7 +15,7 @@ floating_modifier $mod
 
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec kitty
+#bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -185,12 +185,6 @@ hide_edge_borders both
 
 	
 }
-
-
-bindsym $mod+shift+x exec ~/.scripts/lock.sh
-
-#bindsym $mod+x exec ~/.scripts/killProgram
-
 # key-bindings 
 bindsym XF86AudioRaiseVolume exec pamixer -i 2 5%
 #increase sound volume
@@ -201,18 +195,9 @@ bindsym XF86AudioLowerVolume exec pamixer -d 2 5%
 bindsym XF86AudioMute exec pamixer -t
 # mute sound
 
-#rofi binds
-#bindsym $mod+d exec dmenu_run
-bindsym $mod+d exec rofi -show run
-
-#interactive screenshot by pressing printscreen
-#bindsym Print exec gnome-screenshot -i 
-#crop-area screenshot by pressing Mod + printscreen
-#bindsym $mod+Print exec gnome-screenshot -a
-
 bindsym Print exec flameshot full -c -p ~/Pictures/ScreenShots/
 bindsym $mod+Print exec flameshot gui
-
+bindsym $mod+shift+x exec ~/.scripts/lock.sh
 # startup
 exec --no-startup-id clipit
 exec --no-startup-id flameshot
@@ -220,36 +205,13 @@ exec --no-startup-id ~/.scripts/startup.sh
 # exec_always compton -f
 exec_always feh --bg-fill ~/Pictures/nordic-wallpapers/wallpapers/ign_mandalorian.jpg
 
-# emoji selector window key binding
-bindsym shift+i exec ~/.scripts/emojis/emoji.sh
-
-# configuring dunst
 exec --no-startup-id dunst -c ~/.config/dunst/dunstrc
 
-# kaju emojis and gifs
-bindsym $mod+i exec ~/.scripts/custom_emoji/custom_emoji.sh
-bindsym $mod+m exec ~/.scripts/custom_emoji/subscripts/matrixrun
+exec_always sxhkd
 
 # screen saver
 exec --no-startup-id xss-lock -l ~/.scripts/lock.sh
 
-# passmenu
-#bindsym $mod+p exec ~/.scripts/passmenu
-
-# translator
-bindsym shift+n exec ~/.scripts/flix-cli/flix-cli
-
-# bookmarks
-bindsym $mod+b exec ~/.scripts/bookmarks/bookmarks
-
-#share
-bindsym $mod+c exec ~/.scripts/share
-
-#waterfox
-#bindsym $mod+shift+f exec ~/Downloads/waterfox/waterfox
-
-# Polybar launch script
-# exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Assign programs to workspaces
 for_window [class="Firefox"] move to workspace $ws1

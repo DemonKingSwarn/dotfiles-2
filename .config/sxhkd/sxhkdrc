@@ -1,5 +1,18 @@
 super + p
-	maim --select | tee ~/Pictures/ScreenShots/$(date +%s).png | xclip -selection clipboard -t image/png
-
+	maim --select | tee ~/Pictures/ScreenShots/screenshot_$(date +%s).png | xclip -selection clipboard -t image/png
+		
 super + shift + p
-	maim ~/Pictures/ScreenShots/$(date +%s).png
+	maim ~/Pictures/ScreenShots/screenshot_$(date +%s).png
+
+super + d
+	rofi -show run
+
+super + Return
+	kitty
+
+super + i
+	$HOME/.scripts/custom_emoji/custom_emoji.sh
+
+super + shift + i
+	$HOME/.scripts/emojis/emoji.sh
+

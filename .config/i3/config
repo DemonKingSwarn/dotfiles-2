@@ -221,7 +221,7 @@ exec --no-startup-id ~/.scripts/startup.sh
 exec_always feh --bg-fill ~/Pictures/nordic-wallpapers/wallpapers/ign_mandalorian.jpg
 
 # emoji selector window key binding
-bindsym $mod+shift+i exec ~/.scripts/emojis/emoji.sh
+bindsym shift+i exec ~/.scripts/emojis/emoji.sh
 
 # configuring dunst
 exec --no-startup-id dunst -c ~/.config/dunst/dunstrc
@@ -234,7 +234,7 @@ bindsym $mod+m exec ~/.scripts/custom_emoji/subscripts/matrixrun
 exec --no-startup-id xss-lock -l ~/.scripts/lock.sh
 
 # passmenu
-bindsym $mod+p exec ~/.scripts/passmenu
+#bindsym $mod+p exec ~/.scripts/passmenu
 
 # translator
 bindsym shift+n exec ~/.scripts/flix-cli/flix-cli

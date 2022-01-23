@@ -254,6 +254,7 @@ bindsym $mod+c exec ~/.scripts/share
 # Assign programs to workspaces
 for_window [class="Firefox"] move to workspace $ws1
 for_window [class="Waterfox"] move to workspace $ws1
+for_window [class="LibreWolf"] move to workspace $ws1
 for_window [class="kitty"] move to workspace $ws2
 
 # floating

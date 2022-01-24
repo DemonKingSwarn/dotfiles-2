@@ -15,4 +15,3 @@ super + i
 
 super + shift + i
 	$HOME/.scripts/emojis/emoji.sh
-

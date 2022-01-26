@@ -55,12 +55,12 @@ bindsym $mod+h split h
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+#bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+#bindsym $mod+s layout stacking
+#bindsym $mod+w layout tabbed
+#bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -195,12 +195,12 @@ bindsym XF86AudioLowerVolume exec pamixer -d 2 5%
 bindsym XF86AudioMute exec pamixer -t
 # mute sound
 
-bindsym Print exec flameshot full -c -p ~/Pictures/ScreenShots/
-bindsym $mod+Print exec flameshot gui
+#bindsym Print exec flameshot full -c -p ~/Pictures/ScreenShots/
+#bindsym $mod+Print exec flameshot gui
 bindsym $mod+shift+x exec ~/.scripts/lock.sh
 # startup
 exec --no-startup-id clipit
-exec --no-startup-id flameshot
+#exec --no-startup-id flameshot
 exec --no-startup-id ~/.scripts/startup.sh
 # exec_always compton -f
 exec_always feh --bg-fill ~/Pictures/nordic-wallpapers/wallpapers/ign_mandalorian.jpg
@@ -217,7 +217,7 @@ exec --no-startup-id xss-lock -l ~/.scripts/lock.sh
 for_window [class="Firefox"] move to workspace $ws1
 for_window [class="Waterfox"] move to workspace $ws1
 for_window [class="LibreWolf"] move to workspace $ws1
-for_window [class="kitty"] move to workspace $ws2
+for_window [class="St"] move to workspace $ws2
 
 # floating
 for_window [class="Pavucontrol"] floating enable

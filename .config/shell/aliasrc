@@ -1,0 +1,11 @@
+alias config='/usr/bin/git --git-dir=/home/swarnadityasingh/.dotfiles --work-tree=/home/swarnadityasingh'
+alias ..='cd ..'
+alias ttyper='/home/swarnadityasingh/.cargo/bin/ttyper'
+alias hst='history'
+alias aptup='sudo apt-fast update && sudo apt-fast upgrade'
+alias ls='ls -lah --color=auto'
+alias mv='mv -i'
+alias rm='rm -i'
+alias ln='ln -i'
+alias cp='cp -i'
+

@@ -1,11 +1,24 @@
+#!/bin/zsh
+
 alias config='/usr/bin/git --git-dir=/home/swarnadityasingh/.dotfiles --work-tree=/home/swarnadityasingh'
 alias ..='cd ..'
 alias ttyper='/home/swarnadityasingh/.cargo/bin/ttyper'
 alias hst='history'
-alias aptup='sudo apt-fast update && sudo apt-fast upgrade'
 alias ls='ls -lah --color=auto'
+
+# Confirmations
 alias mv='mv -i'
 alias rm='rm -i'
 alias ln='ln -i'
 alias cp='cp -i'
-alias vim='nvim'
+
+# QoL
+alias e="$EDITOR"
+alias c='clear'
+alias xcc='xclip -selection clipboard'
+alias xco='xclip -selection clipboard -o'
+
+# Package Management
+alias install='sudo apt-fast install -y' 
+alias uninstall='sudo apt-fast remove -y'
+alias update='sudo apt-fast update'

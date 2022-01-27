@@ -1,4 +1,9 @@
-# Luke's config for the Zoomer Shell
+#  ____  _____ __  __  ___  _   _
+# |  _ \| ____|  \/  |/ _ \| \ | |
+# | | | |  _| | |\/| | | | |  \| |
+# | |_| | |___| |  | | |_| | |\  |
+# |____/|_____|_|  |_|\___/|_| \_|
+#
 
 # Enable colors and change prompt:
 autoload -U colors && colors
@@ -64,13 +69,8 @@ bindkey -s '^o' 'lfcd\n'
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
-# alias 
-
-alias config='/usr/bin/git --git-dir=/home/swarnadityasingh/.dotfiles --work-tree=/home/swarnadityasingh'
-alias ..='cd ..'
-alias count='wc -l'
-alias ttyper='/home/swarnadityasingh/.cargo/bin/ttyper'
-
 figlet fsociety
 
+source "$HOME/.config/shell/profile"
+source "$XDG_CONFIG_HOME/shell/aliasrc"
 source ./Downloads/gitthings/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

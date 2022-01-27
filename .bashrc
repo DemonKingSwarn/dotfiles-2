@@ -135,4 +135,4 @@ xset b 0 0 0
 
  # Rice
 echo "$ cat fsociety00.dat"
-exec zsh
+#exec zsh

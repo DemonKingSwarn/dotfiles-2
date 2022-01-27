@@ -12,7 +12,7 @@ PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magent
 # History in cache directory:
 HISTSIZE=10000
 SAVEHIST=10000
-HISTFILE=~/.cache/zsh/history
+HISTFILE=~/.histfile
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -72,6 +72,14 @@ bindkey '^e' edit-command-line
 source "$HOME/.config/shell/profile"
 source "$XDG_CONFIG_HOME/shell/aliasrc"
 source ./Downloads/gitthings/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ./Downloads/gitthings/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # rice
-figlet fsociety
+echo "
+ ____  _____ __  __  ___  _   _
+|  _ \| ____|  \/  |/ _ \| \ | |
+| | | |  _| | |\/| | | | |  \| |
+| |_| | |___| |  | | |_| | |\  |
+|____/|_____|_|  |_|\___/|_| \_|
+
+"

@@ -69,8 +69,9 @@ bindkey -s '^o' 'lfcd\n'
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
-figlet fsociety
-
 source "$HOME/.config/shell/profile"
 source "$XDG_CONFIG_HOME/shell/aliasrc"
 source ./Downloads/gitthings/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# rice
+figlet fsociety

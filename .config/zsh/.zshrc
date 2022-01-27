@@ -72,7 +72,7 @@ bindkey '^e' edit-command-line
 source "$HOME/.config/shell/profile"
 source "$XDG_CONFIG_HOME/shell/aliasrc"
 source ./Downloads/gitthings/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ./Downloads/gitthings/zsh-autosuggestions/zsh-autosuggestions.zsh
+#source ./Downloads/gitthings/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # rice
 echo "

@@ -8,4 +8,4 @@ alias mv='mv -i'
 alias rm='rm -i'
 alias ln='ln -i'
 alias cp='cp -i'
-
+alias vim='nvim'

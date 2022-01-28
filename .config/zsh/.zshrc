@@ -9,10 +9,11 @@
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
+
 # History in cache directory:
 HISTSIZE=10000
 SAVEHIST=10000
-HISTFILE=~/.histfile
+HISTFILE=~/.config/zsh/histfile
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -71,15 +72,12 @@ bindkey '^e' edit-command-line
 
 source "$HOME/.config/shell/profile"
 source "$XDG_CONFIG_HOME/shell/aliasrc"
-source ./Downloads/gitthings/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-#source ./Downloads/gitthings/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOME/Downloads/gitthings/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# rice
-echo "
- ____  _____ __  __  ___  _   _
-|  _ \| ____|  \/  |/ _ \| \ | |
-| | | |  _| | |\/| | | | |  \| |
-| |_| | |___| |  | | |_| | |\  |
-|____/|_____|_|  |_|\___/|_| \_|
+wal -i Pictures/nordic-wallpapers/wallpapers/katana_anime_girl.jpg -n
 
-"
+# You can create a function for this in your shellrc (.bashrc, .zshrc).
+wal-tile() {
+    wal -n -i "$@"
+    feh --bg-tile "$(< "${HOME}/.cache/wal/wal")"
+}

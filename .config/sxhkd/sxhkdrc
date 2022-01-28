@@ -14,7 +14,7 @@ alt + d
 	dmenu_run
 
 super + Return
-	st
+	kitty
 
 super + w
 	$HOME/.scripts/custom_emoji/custom_emoji.sh
@@ -30,6 +30,9 @@ super + p
 
 super + f
 	rofi -show file-browser-extended -show-icons -file-browser-hide-parent
+
+alt + f
+	i3-dmenu-desktop
 
 XF86AudioRaiseVolume 
 	pamixer -i 2 5%

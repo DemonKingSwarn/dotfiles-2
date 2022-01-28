@@ -10,6 +10,9 @@ super + Print
 super + d
 	rofi -show run
 
+alt + d
+	dmenu_run
+
 super + Return
 	st
 

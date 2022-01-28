@@ -27,3 +27,13 @@ super + p
 
 super + f
 	rofi -show file-browser-extended -show-icons -file-browser-hide-parent
+
+XF86AudioRaiseVolume 
+	pamixer -i 2 5%
+
+XF86AudioLowerVolume 
+	pamixer -d 2 5%
+
+XF86AudioMute 
+	pamixer -t
+

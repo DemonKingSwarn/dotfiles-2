@@ -3,7 +3,7 @@
 alias config='/usr/bin/git --git-dir=/home/swarnadityasingh/.dotfiles --work-tree=/home/swarnadityasingh'
 alias ..='cd ..'
 alias ttyper='/home/swarnadityasingh/.cargo/bin/ttyper'
-alias hst='cat ~/.histfile'
+alias hst='nvim ~/.histfile'
 alias ls='ls -lah --color=auto'
 
 # Confirmations
@@ -17,6 +17,7 @@ alias e="$EDITOR"
 alias c='clear'
 alias xcc='xclip -selection clipboard'
 alias xco='xclip -selection clipboard -o'
+alias count='wc -l'
 
 # Package Management
 alias install='sudo apt-fast install -y' 

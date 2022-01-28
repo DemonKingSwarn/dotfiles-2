@@ -185,39 +185,20 @@ hide_edge_borders both
 
 	
 }
-# key-bindings 
-bindsym XF86AudioRaiseVolume exec pamixer -i 2 5%
-#increase sound volume
 
-bindsym XF86AudioLowerVolume exec pamixer -d 2 5%
-#decrease sound volume
-
-bindsym XF86AudioMute exec pamixer -t
-# mute sound
-
-#bindsym Print exec flameshot full -c -p ~/Pictures/ScreenShots/
-#bindsym $mod+Print exec flameshot gui
 bindsym $mod+shift+x exec ~/.scripts/lock.sh
+
 # startup
-exec --no-startup-id clipit
-#exec --no-startup-id flameshot
 exec --no-startup-id ~/.scripts/startup.sh
-# exec_always compton -f
 exec_always feh --bg-fill ~/Pictures/nordic-wallpapers/wallpapers/ign_mandalorian.jpg
-
-exec --no-startup-id dunst -c ~/.config/dunst/dunstrc
-
-exec_always sxhkd
 
 # screen saver
 exec --no-startup-id xss-lock -l ~/.scripts/lock.sh
 
-
 # Assign programs to workspaces
 for_window [class="Firefox"] move to workspace $ws1
 for_window [class="Waterfox"] move to workspace $ws1
-for_window [class="LibreWolf"] move to workspace $ws1
-for_window [class="St"] move to workspace $ws2
+#for_window [class="St"] move to workspace $ws2
 
 # floating
 for_window [class="Pavucontrol"] floating enable
@@ -225,7 +206,6 @@ for_window [class="Gnome-calculator"] floating enable
 for_window [class="Pcmanfm"] floating enable
 for_window [class="Thunar"] floating enable
 for_window [class="Tk"] floating enable
-
 
 # i3-gaps
 smart_gaps on

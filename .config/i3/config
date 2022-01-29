@@ -164,13 +164,13 @@ hide_edge_borders both
 # finds out, if available)
  bar {
          status_command ~/bumblebee-status/bumblebee-status \
-	 	-m battery brightness memory date time \
+	 	-m brightness memory date time \
 		   pasink pasource \
 		-p time.format="%H:%M:%S" \
-		-t iceberg-rainbow \
+		-t powerline-pango \
 
 	position top
-	font pango: System San Francisco Displiay 10
+	font pango: iosevka, FontAwesome 10
 #	font pango: iosevka-bold 10
 	 colors {
 		background $bg-color

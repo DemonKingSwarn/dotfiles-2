@@ -10,4 +10,5 @@ cd
 compton -f -b &
 sxhkd &
 clipit &
-dunst
+dunst &
+nm-applet

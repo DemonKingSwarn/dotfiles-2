@@ -166,7 +166,7 @@ hide_edge_borders both
 	 	-m brightness memory date time \
 		   pasink pasource \
 		-p time.format="%H:%M:%S" \
-		-t powerline-pango \
+		-t dracula-powerline \
 
 	position top
 	font pango: iosevka, FontAwesome 10

@@ -4,8 +4,7 @@ set $mod Mod4
 font pango:System San Francisco Display 10
 #font pango: iosevka 13
 
-# NetworkManager
-exec --no-startup-id nm-applet
+exec --no-startup-id ~/.scripts/startup.sh
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -187,7 +186,6 @@ hide_edge_borders both
 bindsym $mod+shift+x exec ~/.scripts/lock.sh
 
 # startup
-exec --no-startup-id ~/.scripts/startup.sh
 exec_always feh --bg-fill ~/Pictures/nordic-wallpapers/wallpapers/katana_anime_girl.jpg
 
 # screen saver

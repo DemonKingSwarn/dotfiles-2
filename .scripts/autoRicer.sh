@@ -8,7 +8,7 @@ add-apt-repository ppa:apt-fast/stable
 apt-get update
 apt-get -y install apt-fast
 
-# brew
+# brew - un comment it if you really want brew.
 #/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # i3wm
@@ -46,15 +46,15 @@ mv ~/dotfiles-2/.config/i3/* ~/.config/i3/
 mv ~/dotfiles-2/Pictures/* ~/Pictures/
 mkdir ~/.config/sxhkd
 mv ~/dotfiles-2/.config/sxhkd/* ~/.config/sxhkd/
-apt-fast install sxhkd
-apt-fast install zsh
+apt-fast install sxhkd -y
+apt-fast install zsh -y
 mkdir .config/zsh/
 mv ~/dotfiles-2/.config/zsh/* ~/.config/zsh/
 ln -s ~/.config/zsh/.zshrc ~/.zshrc
 mkdir ~/.config/shell/
 mv ~/dotfiles-2/.config/shell/* ~/.config/shell/
 ln -s ~/.config/shell/profile ~/.zprofile
-apt-fast install rofi
+apt-fast install rofi -y
 mv ~/dotfiles-2/.config/rofi ~/.config/
 git clone https://github.com/demonkingswarn/myst
 cd myst
@@ -62,12 +62,29 @@ sudo make install
 cd
 git clone https://github.com/demonkingswarn/mydmenu
 cd mydmenu
-apt-fast install dmenu
+apt-fast install dmenu -y
 sudo make install
 cd
-apt-fast install feh
-apt-fast install sxiv
+apt-fast install feh -y
+apt-fast install sxiv -y
 mv ~/dotfiles-2/.config/sxiv ~/.config/
 source ~/.zshrc
-apt-fast install kitty
-
+apt-fast install kitty -y
+git clone https://github.com/tobi-wan-kenobi/bumblebee-status.git
+mv ~/dotfiles-2/Downloads/gitthings ~/Downloads/
+mv ~/dotfiles-2/.scripts/ ~/
+cd ~/dotfiles-2/.config
+rm -rf i3/
+rm -rf sxhkd/
+rm -rf zsh/
+rm -rf shell/
+mv * ~/.config/
+cd
+apt-fast install fonts-powerline -y
+apt-fast install figlet -y
+apt-fast install maim -y
+#figlet fuck society
+cd dotfiles-2
+rm -rf .config
+mv -f * ~/
+figlet debmon

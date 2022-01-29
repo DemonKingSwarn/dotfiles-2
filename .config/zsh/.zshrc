@@ -76,7 +76,6 @@ source $HOME/Downloads/gitthings/zsh-syntax-highlighting/zsh-syntax-highlighting
 
 wal -i Pictures/nordic-wallpapers/wallpapers/katana_anime_girl.jpg -n
 
-# You can create a function for this in your shellrc (.bashrc, .zshrc).
 wal-tile() {
     wal -n -i "$@"
     feh --bg-tile "$(< "${HOME}/.cache/wal/wal")"

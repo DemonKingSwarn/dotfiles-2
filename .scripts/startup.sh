@@ -7,7 +7,7 @@ git pull
 cd
 
 # rice
-compton -f -b &
+picom -f -b &
 sxhkd &
 clipit &
 dunst &

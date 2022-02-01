@@ -152,7 +152,7 @@ set $urgent-bg-color     #E53935
 
 # window colors
 #                       border              background         text                 indicator
-client.focused          $bg-color           $bg-color          $text-color          #00ff00
+client.focused          $bg-color           $bg-color          $text-color          #000000
 client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
 client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
 client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
@@ -166,7 +166,7 @@ hide_edge_borders both
 	 	-m brightness memory date time \
 		   pasink pasource \
 		-p time.format="%H:%M:%S" \
-		-t dracula-powerline \
+		-t iceberg-rainbow \
 
 	position top
 	font pango: iosevka, FontAwesome 10
@@ -204,7 +204,7 @@ for_window [class="Thunar"] floating enable
 for_window [class="Tk"] floating enable
 
 # i3-gaps
-smart_gaps on
+# smart_gaps on
 gaps inner 8
 gaps outer 2
 for_window [class="^.*"] border pixel 3

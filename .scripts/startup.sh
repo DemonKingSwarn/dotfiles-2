@@ -2,12 +2,8 @@
 
 # This is a startup script
 
-cd ~/cashew/emojis/
-git pull
-cd
-
 # rice
-picom -f -b &
+picom --experimental-backends -b &
 sxhkd &
 clipit &
 dunst &

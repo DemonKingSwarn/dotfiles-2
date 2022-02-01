@@ -1,6 +1,6 @@
 *
 !.gitignore
 !init.el
-!README.md
+!README.org
 !*/img/
 !avatar.png

@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-alias config='/usr/bin/git --git-dir=/home/swarnadityasingh/.dotfiles --work-tree=/home/swarnadityasingh'
+alias dots='/usr/bin/git --git-dir=/home/swarnadityasingh/.dotfiles --work-tree=/home/swarnadityasingh'
 alias ..='cd ..'
 alias ttyper='/home/swarnadityasingh/.cargo/bin/ttyper'
 alias hst='nvim ~/.histfile'
@@ -13,7 +13,7 @@ alias ln='ln -i'
 alias cp='cp -i'
 
 # QoL
-alias e="$EDITOR"
+alias vim="$EDITOR"
 alias c='clear'
 alias xcc='xclip -selection clipboard'
 alias xco='xclip -selection clipboard -o'

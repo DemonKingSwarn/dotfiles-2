@@ -1,3 +1,5 @@
 ../unicode/unicode
 ../bookmarks/bookmarks
 ../reddit_images
+../wificon
+../flix-cli/flix-cli

@@ -7,4 +7,5 @@ picom --experimental-backends -b &
 sxhkd &
 clipit &
 dunst &
-nm-applet
+nm-applet &
+vktablet

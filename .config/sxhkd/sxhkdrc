@@ -5,7 +5,7 @@ Print
 	maim --select | tee ~/Pictures/ScreenShots/screenshot_$(date +%s).png | xclip -selection clipboard -t image/png
 		
 super + Print
-	maim ~/Pictures/ScreenShots/screenshot_$(date +%s).png
+	maim | tee ~/Pictures/ScreenShots/$(date +%s).jpg | xclip -sel c -t image/jpg
 
 super + d
 	rofi -show run
@@ -14,7 +14,7 @@ alt + d
 	dmenu_run
 
 super + Return
-	kitty
+	st
 
 super + w
 	$HOME/.scripts/custom_emoji/custom_emoji.sh

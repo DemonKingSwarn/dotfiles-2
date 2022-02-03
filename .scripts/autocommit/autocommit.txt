@@ -1,2 +1,2 @@
-.password-store/
-~/Pictures/ScreenShots/
+./.password-store/
+./Pictures/ScreenShots/

@@ -1,9 +1,10 @@
 #!/usr/bin/env sh
 
 # rice
-picom --experimental-backends -b &
+picom --experimental-backends -f -b &
 sxhkd &
 clipit &
 dunst &
 nm-applet &
-vktablet
+vktablet &
+./autocommit/autocommit.sh

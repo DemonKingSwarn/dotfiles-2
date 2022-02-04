@@ -5,6 +5,7 @@ alias ..='cd ..'
 alias ttyper='/home/swarnadityasingh/.cargo/bin/ttyper'
 alias hst='nvim ~/.histfile'
 alias ls='ls -lah --color=auto'
+alias sxiv='nsxiv'
 
 # Confirmations
 alias mv='mv -i'
@@ -13,7 +14,7 @@ alias ln='ln -i'
 alias cp='cp -i'
 
 # QoL
-alias vim="$EDITOR"
+alias vim='nvim'
 alias c='clear'
 alias xcc='xclip -selection clipboard'
 alias xco='xclip -selection clipboard -o'

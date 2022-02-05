@@ -1,4 +1,4 @@
 #!/bin/sh
 
 query=$(printf '%s' "$*" | tr ' ' '+')
-mpv "http://localhost:3000/$(curl -s "https://vid.puffyan.us/search?q=$query" | grep -Eo "watch\?v=.{11}" | head -n 1)"
+mpv "http://localhost:3000/$(curl -s "http://localhost:3000/search?q=$query" | grep -Eo "watch\?v=.{11}" | head -n 1)"

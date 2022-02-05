@@ -74,7 +74,7 @@ source "$HOME/.config/shell/profile"
 source "$XDG_CONFIG_HOME/shell/aliasrc"
 source $HOME/Downloads/gitthings/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-wal -i Pictures/nordic-wallpapers/wallpapers/katana_anime_girl.jpg -n
+wal -i Pictures/nordic-wallpapers/mr_robot.jpg -n
 
 wal-tile() {
     wal -n -i "$@"

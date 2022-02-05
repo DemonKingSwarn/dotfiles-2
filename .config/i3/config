@@ -186,7 +186,7 @@ hide_edge_borders both
 bindsym $mod+shift+x exec ~/.scripts/lock.sh
 
 # startup
-exec_always feh --bg-fill ~/Pictures/nordic-wallpapers/wallpapers/katana_anime_girl.jpg
+#exec_always feh --bg-fill ~/Pictures/nordic-wallpapers/mr_robot.jpg
 
 # screen saver
 exec --no-startup-id xss-lock -l ~/.scripts/lock.sh

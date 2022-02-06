@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # rice
-~/Downloads/gitthings/picom/build/src/picom --experimental-backends -f -b &
+picom --experimental-backends -f -b &
 sxhkd &
 clipit &
 dunst &

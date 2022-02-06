@@ -7,5 +7,7 @@ file=`/bin/ls -1 "$dir" | sed -ne "${rand_num}p"`
 walp=`cd $dir && echo "$PWD/$file"` # Converts to full path.  
 # sets the wallpaper 
 feh --bg-fill "$walp"
+# sets the terminal color scheme 
+wal -i "$walp" -b 
 # sets the firefox color scheme
 pywalfox install

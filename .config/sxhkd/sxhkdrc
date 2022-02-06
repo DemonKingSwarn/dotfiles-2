@@ -5,7 +5,7 @@ Print
 	maim -u --select | tee ~/Pictures/ScreenShots/screenshot_$(date +%s).png | xclip -selection clipboard -t image/png
 		
 super + Print
-	maim | tee ~/Pictures/ScreenShots/$(date +%s).jpg | xclip -sel c -t image/jpg
+	maim -u | tee ~/Pictures/ScreenShots/$(date +%s).jpg | xclip -sel c -t image/jpg
 
 super + d
 	rofi -show run

@@ -5,7 +5,6 @@ alias ..='cd ..'
 alias ttyper='/home/swarnadityasingh/.cargo/bin/ttyper'
 alias hst='nvim ~/.histfile'
 alias ls='ls -lah --color=auto'
-alias sxiv='nsxiv'
 
 # Confirmations
 alias mv='mv -i'

@@ -1,5 +1,5 @@
 #!/bin/sh
-
+# Selects a random wallpaper
 dir="$HOME/Pictures/nordic-wallpapers/wallpapers/"
 n_files=`/bin/ls -1 "$dir" | wc -l | cut -f1`
 rand_num=`awk "BEGIN{srand();print int($n_files * rand()) + 1;}"`

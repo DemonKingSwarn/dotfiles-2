@@ -3,7 +3,7 @@
 chosen=$(rofi -theme "~/.config/rofi/themes/nord.rasi" -show file-browser-extended -file-browser-dir ~/cashew/emojis -file-browser-cmd basename -file-browser-hide-parent -show-icons)
 
 [ -z "$chosen" ] && exit
-printf "https://gitlab.com/thecashewtrader/emojis/-/raw/main/$chosen" | xclip -sel c
+printf "https://codeberg.org/demonkingswarn/emojis/raw/branch/main/$chosen" | xclip -sel c
 xdotool key ctrl+v
 sleep 0.15
 xdotool key Return

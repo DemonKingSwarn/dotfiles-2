@@ -7,4 +7,10 @@ clipit &
 dunst &
 nm-applet &
 vktablet &
-~/.scripts/set_wallpaper
+~/.scripts/set_wallpaper &
+
+# Updates custom emojis
+cd ~/cashew/emojis/
+git pull
+cd
+

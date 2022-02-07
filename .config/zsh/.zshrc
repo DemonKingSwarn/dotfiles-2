@@ -74,9 +74,9 @@ source "$HOME/.config/shell/profile"
 source "$XDG_CONFIG_HOME/shell/aliasrc"
 source $HOME/Downloads/gitthings/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-(cat ~/.cache/wal/sequences &)
+cat ~/.cache/wal/sequences
 
-wal-tile() {
-    wal -n -i "$@"
-    feh --bg-tile "$(< "${HOME}/.cache/wal/wal")"
-}
+# wal-tile() {
+ #   wal -n -i "$@"
+ #  feh --bg-tile "$(< "${HOME}/.cache/wal/wal")"
+# }

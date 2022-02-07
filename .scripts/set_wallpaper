@@ -8,6 +8,6 @@ walp=`cd $dir && echo "$PWD/$file"` # Converts to full path.
 # sets the wallpaper 
 feh --bg-fill "$walp"
 # sets the terminal color scheme 
-wal -i "$walp" -b 
+wal -i "$walp"
 # sets the firefox color scheme
 pywalfox install

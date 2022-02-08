@@ -1,6 +1,6 @@
 #!/bin/bash
 
-chosen=$(find $HOME/cashew/emojis/ -type f | rofi -dmenu -p "Select" -i)
+chosen=$(find $HOME/cashew/emojis/ -type f | rofi -dmenu -p "Select" -i -show-icons)
 #[ -z "$chosen" ] && exit
 #printf "https://gitlab.com/thecashewtrader/emojis/-/raw/main/$chosen" | xclip -sel c
 xclip -selection clipboard -t image/png -i "$chosen"

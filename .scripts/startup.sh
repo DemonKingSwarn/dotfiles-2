@@ -6,7 +6,6 @@ sxhkd &
 clipit &
 dunst &
 nm-applet &
-vktablet &
 ~/.scripts/set_wallpaper &
 
 # Updates custom emojis

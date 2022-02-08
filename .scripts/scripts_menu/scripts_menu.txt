@@ -2,4 +2,4 @@
 ../bookmarks/bookmarks
 ../reddit_images
 ../wificon
-../flix-cli/flix-cli
+../custom_emoji/subscripts/matrixrun

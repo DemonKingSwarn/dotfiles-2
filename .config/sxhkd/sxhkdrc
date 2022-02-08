@@ -2,10 +2,10 @@ super + Escape
 	pkill -USR1 -x sxhkd
 
 Print
-	maim -u --select | tee ~/Pictures/ScreenShots/screenshot_$(date +%s).png | xclip -selection clipboard -t image/png
+	maim -u --select | tee ~/Pictures/ScreenShots/screenshot_$(date +"%Y_%m_%d_%T_%M_%p").png | xclip -selection clipboard -t image/png
 		
 super + Print
-	maim -u | tee ~/Pictures/ScreenShots/$(date +%s).jpg | xclip -sel c -t image/jpg
+	maim -u | tee ~/Pictures/ScreenShots/$(date +"%Y_%m_%d_%T_%M_%p").jpg | xclip -sel c -t image/jpg
 
 super + d
 	rofi -show run
@@ -43,3 +43,5 @@ XF86AudioLowerVolume
 XF86AudioMute 
 	pamixer -t
 
+super + c
+	~/.scripts/cbspells

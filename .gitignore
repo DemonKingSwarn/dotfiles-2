@@ -1,5 +1,6 @@
 *
 !.gitignore
+!.config/X11/
 !.config/shell/
 !.config/zsh/
 !.config/i3/

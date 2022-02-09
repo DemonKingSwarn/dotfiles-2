@@ -5,7 +5,6 @@ picom --experimental-backends -f -b &
 sxhkd &
 clipit &
 dunst &
-nm-applet &
 ~/.scripts/set_wallpaper &
 
 # Updates custom emojis

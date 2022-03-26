@@ -4,7 +4,7 @@ alias dots='/usr/bin/git --git-dir=/home/swarnadityasingh/.dotfiles --work-tree=
 alias ..='cd ..'
 alias ttyper='/home/swarnadityasingh/.cargo/bin/ttyper'
 alias hst='nvim ~/.histfile'
-alias ls='ls -lah --color=auto'
+alias ls='exa -lah --color=auto'
 
 # Confirmations
 alias mv='mv -i'

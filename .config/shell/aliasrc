@@ -4,7 +4,6 @@ alias dots='/usr/bin/git --git-dir=/home/swarnadityasingh/.dotfiles --work-tree=
 alias ..='cd ..'
 alias ttyper='/home/swarnadityasingh/.cargo/bin/ttyper'
 alias hst='nvim ~/.histfile'
-alias ls='exa -lah --color=auto'
 
 # Confirmations
 alias mv='mv -i'
@@ -20,6 +19,6 @@ alias xco='xclip -selection clipboard -o'
 alias count='wc -l'
 
 # Package Management
-alias install='sudo apt-fast install -y' 
-alias uninstall='sudo apt-fast remove -y'
+alias install='sudo apt-fast install' 
+alias uninstall='sudo apt-fast remove'
 alias update='sudo apt-fast update'
